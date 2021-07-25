@@ -35,9 +35,9 @@ function Details() {
             <table>
                 <tbody>
                     <tr>
-                        <td>Genre:</td>
+                        <tr>Genre:</tr>
                         {genres.map((genre, index) => {
-                            return <td key={index}>{genre.name}</td>
+                            return <li key={index}>{genre.name}</li>
                         })}
                     </tr>
                 </tbody>
