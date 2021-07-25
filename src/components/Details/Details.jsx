@@ -26,21 +26,24 @@ function Details() {
         }
         console.log('before return', details);
         return(
-            <Button variant= "contained" color="primary" onClick={goToList}>Back to List</Button>
-            // <Grid item style={{height: "550px" }} id={movieItem.id}> 
-            // <Paper className={classes.paper}>
-            // <CardMedia
-            // style={{height: "550px" }}
-            // className={movieItem.title}
-            // component="img"
-            // alt={movieItem.title}
-            // src={movieItem.details}
-            // title={movieItem.title}
-            // />
-            // </Paper>
-            // </Grid> 
-
+            <h1>Movie Details</h1>
         );
 };
 
 export default Details;
+
+{/* <>
+<Button style={{width: "150px", height: "55px"}} variant= "contained" color="primary" onClick={goToList}>Back to List</Button>
+<Grid item style={{height: "550px" }} id={movieItem.id}> 
+<Paper className={classes.paper}>
+<CardMedia
+style={{height: "550px" }}
+className={movieItem.title}
+component="img"
+alt={movieItem.title}
+src={movieItem.details}
+title={movieItem.title}
+/>
+</Paper>
+</Grid> 
+</> */}
