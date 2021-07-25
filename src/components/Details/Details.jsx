@@ -7,11 +7,13 @@ import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 
 
+
 function Details() {
     const dispatch = useDispatch();
     const history = useHistory();
     const details = useSelector(store => store.detailsReducer);
-    const movies = useSelector(store => store.movies)
+    const movies = useSelector(store => store.movies);
+    const genres = useSelector(store => store.genres);
 
     const goToList = () => {
         history.push('/')
@@ -30,9 +32,18 @@ function Details() {
                 <img src={movies[details-1].poster} />
                 <p>{movies[details-1].description}</p>
             </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Genre:</td>
+                        {genres.map((genre, index) => {
+                            return <td key={index}>{genre.name}</td>
+                        })}
+                    </tr>
+                </tbody>
+            </table>
             </>
         );
 };
 
 export default Details;
-
