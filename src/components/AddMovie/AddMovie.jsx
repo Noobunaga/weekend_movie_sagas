@@ -21,7 +21,7 @@ function AddMovie() {
         setTitle('')
         setUrl('')
     }
-    
+
     const goToList = () => {
         history.push('/')
     }
@@ -30,3 +30,6 @@ return(
 
 )
 }
+
+
+export default AddMovie;

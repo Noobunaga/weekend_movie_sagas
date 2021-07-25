@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Button from "@material-ui/core/Button";
 import './MovieList.css'
 
 function MovieList() {
@@ -21,9 +22,14 @@ function MovieList() {
         history.push('/details')
     }
 
+    const goToAddMovie = () => {
+        history.push('/addmovie')
+    };
+
     return (
         <main>
             <h1>MovieList</h1>
+            <Button style={{width: "150px", height: "55px"}} variant="contained" color="primary" onClick={goToAddMovie}>Add New Movie</Button>
             <section className="movies">
                 {movies.map((movie, index) => {
                     return (
