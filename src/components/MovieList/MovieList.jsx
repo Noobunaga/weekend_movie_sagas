@@ -10,6 +10,7 @@ function MovieList() {
     const movies = useSelector(store => store.movies);
 
     useEffect(() => {
+        console.log('where is this happening', history.location.pathname);
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
@@ -23,7 +24,7 @@ function MovieList() {
         <main>
             <h1>MovieList</h1>
             <section className="movies">
-                {movies.map(movie => {
+                {movies.map((movie, index) => {
                     return (
                         <div key={movie.id} >
                             <h3>{movie.title}</h3>
