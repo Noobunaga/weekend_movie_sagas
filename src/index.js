@@ -17,7 +17,6 @@ import axios from 'axios';
 function* rootSaga() {
     yield takeEvery('FETCH_MOVIES', fetchAllMovies);
     yield takeEvery('GET_GENRES', getGenre);
-    yield takeEvery('GET_ALL_GENRES', allGenres);
     yield takeEvery('POST_MOVIE', postNewMovie)
 }
 
