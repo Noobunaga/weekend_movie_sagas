@@ -29,7 +29,7 @@ function MovieList() {
     return (
         <main>
             <h1>MovieList</h1>
-            <Button style={{width: "150px", height: "55px"}} variant="contained" color="primary" onClick={goToAddMovie}>Add New Movie</Button>
+            <Button style={{width: "150px", height: "55px"}} variant="contained" color="secondary" onClick={goToAddMovie}>Add New Movie</Button>
             <section className="movies">
                 {movies.map((movie, index) => {
                     return (
