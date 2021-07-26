@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
-import { Paper } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
@@ -17,36 +16,23 @@ function AddMovie() {
     const [description, setDescription] = useState('');
     const [genre, setGenre] = useState('');
 
-    //const movie = [];
 
     const genreHandler = [{value: 0, label: "Select An Option"}, {value: 1, label: "Adventure"}, {value: 2, label: "Animated"}, {value: 3, label: "Biographical"}, {value: 4, label: "Comedy"}, {value: 5, label: "Disaster"}, {value: 6, label: "Drama"}, {value: 7, label: "Epic"}, {value: 8, label: "Fantasy"}, {value: 9, label: "Musical"}, {value: 10, label: "Romantic"}, {value: 11, label: "Science Fiction"}, {value: 12, label: "Space-Opera"}, {value: 13, label: "Superhero"}];
-    const handleClose = () => { setTitle(''); setGenre(''); setDescription(''); setUrl('') };
+    const handleClose = () => { history.push('/'); };
 
     const submit = () => { // submit onClick function
         if (title == "" || description == "" || url == "" || genre == 0) { // checks for any empty inputs and declines to post if there are any
             alert('Please fill in all inputs');
             return false;
         };
-        //movie.push({ title: title, description: description, poster: url, genre_id: genre }); // pushes movie data into movie array to send back to server
-        // console.log(movieGenre); // test function
         dispatch({ // sends an ADD_MOVIE request on submit with the payload of movie array (all the data we collected in the form)
             type: "POST_MOVIE",
             payload: { title: title, description: description, poster: url, genre_id: genre }
         });
         handleClose(); // requests function to clears everything
-        history.push('/');
+        history.push('/'); // reset to list page
         
     };
-
-    // const newMovieData = () => {
-    //     event.preventDefault();
-    //     const newMovie = {title: title, poster: url, description: description, genre_id: genre}
-    //     console.log('Getting info from database', newMovie);
-    //     dispatch({type: 'POST_MOVIE', payload: newMovie})
-    //     setDescription('')
-    //     setTitle('')
-    //     setUrl('')
-    // }
 
 
 
@@ -65,7 +51,7 @@ return(
                                 </option>
                             ))}
                         </TextField><br /><br />
-                        <Button variant="contained" color="primary" onClick={handleClose}>Close</Button>
+                        <Button variant="contained" color="primary" onClick={handleClose}>Cancel</Button>
                         &nbsp;
                         <Button variant="contained" color="primary" onClick={submit}>Submit</Button> 
                     </div>

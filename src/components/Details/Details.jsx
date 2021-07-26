@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import logger from 'redux-logger';
-import axios from 'axios';
 import { useHistory } from 'react-router';
 import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
-
+// useParams for cleaner posting of details
+import { useParams } from 'react-router-dom';
 
 
 function Details() {

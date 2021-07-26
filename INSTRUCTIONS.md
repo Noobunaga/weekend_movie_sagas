@@ -61,15 +61,15 @@ This should show all details [] **including ALL genres** for the selected movie.
 
 This should show:
 
-- [] an input field (for the movie title)
-- [] an input field (for the movie poster image URL)
-- [] a textarea (for the movie description)
-- [] a dropdown (for the genres)
+- [x] an input field (for the movie title)
+- [x] an input field (for the movie poster image URL)
+- [x] a textarea (for the movie description)
+- [x] a dropdown (for the genres)
 
 The Add Movie page should have the buttons:
 
-- [] `Cancel` button, which should bring the user to the Home/List Page
-- [] `Save` button, which should save these inputs in the database and bring the user to the Home/List Page (which now has the new movie)
+- [x] `Cancel` button, which should bring the user to the Home/List Page
+- [x] `Save` button, which should save these inputs in the database and bring the user to the Home/List Page (which now has the new movie)
 
 **Base functionality does not require being able to select more than one genre for a new movie**
 
@@ -83,10 +83,10 @@ The Add Movie page should have the buttons:
 
 As one of your last projects, it's possible you will be sharing this with employers, so be sure to follow best practices and make it look good!
 
-- [ ] Invest some time in styling it up!
+- [ x ] Invest some time in styling it up!
     - [ ] Research cards for your movie posters on the list page
     - [ ] Research grids for your movie posters on the Movie List page
-- [ ] Commit your code frequently! You should have at 15+ commits on a project of this size. Use branches to help break down your features.
+- [x ] Commit your code frequently! You should have at 15+ commits on a project of this size. Use branches to help break down your features.
 - [ ] Comment your code.
 - [ ] Update this README to include a description of the project in your own words.
 
