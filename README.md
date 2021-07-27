@@ -9,9 +9,9 @@ If your application has secret keys (for example -- Twilio), make sure you tell 
 
 Create a database named `saga_movies_weekend`,
 The queries in the tables.sql file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on Postgres, so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries,
-Open up your editor of choice and run a npm install
-Run npm run server in your terminal
-Run npm run client in your terminal
+Open up your editor of choice and run a npm install,
+Run npm run server in your terminal,
+Run npm run client in your terminal,
 The npm run client command will open up a new browser tab for you!
 
 
