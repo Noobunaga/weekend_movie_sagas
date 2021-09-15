@@ -2,7 +2,7 @@ Movie Sagas
 
 Duration: 2 days
 
-Getting the genre to populate was a challenge but once the I figured out who to map to it was a lot easier. Also getting the drop down menu to populate with the genres was tough as well so I hard coded it and pushed it in and mapped through it. This may cause a slight issue if new genres are added though.
+Getting the genre to populate was a challenge but once I figured out who to map to it was a lot easier. Also getting the drop down menu to populate with the genres was tough as well so I hard coded it and pushed it in and mapped through it. This may cause a slight issue if new genres are added though.
 
 
 If your application has secret keys (for example -- Twilio), make sure you tell them how to set that up, both in getting the key and then what to call it in the .env file.
